@@ -40,8 +40,15 @@ Based on [C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config
 In general:
 
 - All configuration .json files to build .cpp are in .vscode folder under the main working directory.
-- Press <kbd>control + shift + B</kbd><br> to build .cpp file with tasks.json
+- Press <kbd>control + shift + B</kbd><br> to build .cpp file with **tasks.json**.
 - In a new terminal, run the executable file by typing ./**name**.
+
+To debug:
+
+- **Run > Add Configuration...** and then choose **C++ (GDB/LLDB)**.
+- Choose **g++ build and debug active file**.
+- In **launch.json**, set *stopAtEntry* to *true*.
+- Press <kbd>F5</kbd> to begin debug, use **Step over**, **breakpoint**, **watch** and **Step into** etc. to facilitate debugging process. 
 
 ## Part 1 OOP workshop
 
