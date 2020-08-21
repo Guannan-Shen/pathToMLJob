@@ -1,16 +1,18 @@
 #Redo GCD 
 def findGCD(a, b):
     # we have denominator, numerator and remainder
-    if (a < b):
-        d = a; n = b
-    else:
-        n = a; d = b
+    # this part is not necessary the smaller number will become the remainder if it act as numerator 
+    # if (a < b):
+    #     d = a; n = b
+    # else:
+    #     n = a; d = b
+    n = a; d = b
     while d >= 1:
         # calculate remainder
         r = n%d
         if (r == 0):
     # return
-            return d 
+            return print(f"The greatest common denominator for {a} and {b} is {d}.")
         else:
         # key points of this algorithm
         # the bigger number is n = kd + r
@@ -21,3 +23,6 @@ def findGCD(a, b):
             d = r
 
 findGCD(6, 26)
+
+print(6%20)
+print("%.1e" % 1000)
