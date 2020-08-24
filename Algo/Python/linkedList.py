@@ -57,27 +57,44 @@ class LinkedList(object):
             return item
         else:
             i = 0
-            # my wife Qiwen's code 
+            # my wife Wen code 
             while i < idx:
                 item = item.get_next()
                 i += 1
-            # my wife Qiwen's code 
+            # my wife Wen code 
             return item
+    # TODO: use findAt()
+    # def deleteAt(self, idx):
+    #     # if idx > self.count - 1:
+    #     #     # the same as return None
+    #     #     # return None and return
+    #     #     return
+    #     # else:
+    #     # TODO: We build this upon findAt
+    #     if idx == 0:
+    #         self.head = self.head.get_next()
+    #     else:
+    #         item = self.findAt(idx - 1)
+    #         # itemAfter = self.findAt(idx - 1)
+    #         # item.set_next(itemAfter)
+    #         # TODO: remember the trick
+    #         item.set_next(item.get_next().get_next())
+    #         self.count -= 1
 
     def deleteAt(self, idx):
-        # if idx > self.count - 1:
-        #     # the same as return None
-        #     # return None and return
-        #     return
-        # else:
-        # TODO: We build this upon findAt
-        if idx == 0:
-            self.head = self.head.get_next()
+        if idx > self.count - 1:
+            return
+        elif idx == 0:
+            self.head = self.head.set_next()
         else:
-            item = self.findAt(idx - 1)
-         
+            tmpIdx = 0
+            item = self.head
+            while tmpIdx < idx - 1:
+                item = item.get_next()
+                tmpIdx += 1
+            item.set_next(item.get_next().get_next())
 
-            return item
+            self.count -= 1
 
     # utility function, print the content of the list
     def dump_list(self):
@@ -86,13 +103,19 @@ class LinkedList(object):
             print("Node: ", tmpNode.get_data())
             tmpNode = tmpNode.get_next()
 
-
+########### TODO: test the class #############
+# create a linkedlist 
 itemlist = LinkedList()
+itemlist.dump_list()
 itemlist.insertAtHead(38)
+itemlist.dump_list()
+
 itemlist.insertAtHead(49)
 itemlist.insertAtHead(13)
 itemlist.insertAtHead(15)
 itemlist.dump_list()
+
+
 print("Item count: ", itemlist.get_count())
 print("Finding item: ", itemlist.find(13).get_data())
 print("Finding item: ", itemlist.find(78))
@@ -104,8 +127,19 @@ print(itemlist.findAt(4))
 print(itemlist.findAt(-1))
 
 # then we have delete by index 
+itemlist.deleteAt(2)
+# this use the method
+print("Count: ", itemlist.get_count())
+print("Value: ", itemlist.find(49))
+print("Value: ", itemlist.findAt(2).get_data())
+print(itemlist.dump_list())
 
-
+# continue deleting
+itemlist.deleteAt(2)
+print(itemlist.dump_list())
+# TODO: compare methods and attributes
+# this use the attribute
+# print(itemlist.count)
 
 
     
