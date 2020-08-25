@@ -39,5 +39,15 @@ Particularly, we have by ascending order of time complexity:
     1. Unique mappings allow us to make counters and filters.
     2. Faster than other table look-up methods, especially when data size is large.
     3. Small data, array is more efficient.
-    4. Can not arrange data in a predictable way, similar values may have very different slots. 
+    4. Can not arrange data in a predictable way, similar values may have very different slots.  
 - Graph
+
+## Techniques
+
+### Recursion  
+
+Recursion is a function calls itself.  
+
+- Need a breaking condition  
+- Each time the function is called, the old arguments are saved, not ove-written, but stored aside.  
+- Use call stack to achieve above functionality.  
