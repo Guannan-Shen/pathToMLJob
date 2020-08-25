@@ -22,7 +22,7 @@ Particularly, we have by ascending order of time complexity:
   2. O(log n)
   3. O(n)
   4. O(n log n): heap sort and merge sort
-  5. O($n^2$): bubble sort, selection sort and insertion sort
+  5. ![equation](https://latex.codecogs.com/gif.latex?O(n^2)): bubble sort, selection sort and insertion sort
   6. O(n!)
 
 ## Data Structure
@@ -58,4 +58,4 @@ Recursion is a function calls itself.
 - Merge Sort
 - Quick Sort
 
-### Search 
+### Search  
