@@ -35,5 +35,9 @@ Particularly, we have by ascending order of time complexity:
     1. Stacks support push and pop, both are constant time O(1) operation, last in (push) first out (pop). Stack has been used for backtracking.
     2. Queues support adding and removing, first in first out. Queue has been used for order processing and messaging.  
 - Trees
-- Hash tables
+- Hash tables or Dictionary: associative array, using Hash function to map keys to values. Hash function calculate index to map values to slots in the Hash table. Collisions could happen in non One to One scenario (not injective).
+    1. Unique mappings allow us to make counters and filters.
+    2. Faster than other table look-up methods, especially when data size is large.
+    3. Small data, array is more efficient.
+    4. Can not arrange data in a predictable way, similar values may have very different slots. 
 - Graph
