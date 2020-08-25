@@ -32,6 +32,8 @@ Particularly, we have by ascending order of time complexity:
 - Arrays: collection of elements, one or multi-dimensional.
 - Linked lists: linear collection of nodes.
 - Stacks and queues
+    1. Stacks support push and pop, both are constant time O(1) operation, last in (push) first out (pop). Stack has been used for backtracking.
+    2. Queues support adding and removing, first in first out. Queue has been used for order processing and messaging.  
 - Trees
 - Hash tables
 - Graph
