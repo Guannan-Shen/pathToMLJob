@@ -22,7 +22,7 @@ Particularly, we have by ascending order of time complexity:
   2. O(log n)
   3. O(n)
   4. O(n log n): heap sort and merge sort
-  5. O(n^2): bubble sort, selection sort and insertion sort
+  5. O($n^2$): bubble sort, selection sort and insertion sort
   6. O(n!)
 
 ## Data Structure
@@ -51,3 +51,11 @@ Recursion is a function calls itself.
 - Need a breaking condition  
 - Each time the function is called, the old arguments are saved, not ove-written, but stored aside.  
 - Use call stack to achieve above functionality.  
+
+### Sorting  
+
+- Bubble Sort: very basic sorting method, only for teaching. Performance O($n^2$)
+- Merge Sort
+- Quick Sort
+
+### Search 
