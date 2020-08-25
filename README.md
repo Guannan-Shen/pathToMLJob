@@ -1,8 +1,8 @@
 # Efforts to Get ML Job
 
-## Algorithms and Data Structures
+## [Algorithms and Data Structures](https://github.com/Guannan-Shen/pathToMLJob/tree/master/Algorithms)
 
-## Developer Skills
+## [Developer Skills](https://github.com/Guannan-Shen/pathToMLJob/tree/master/Developer_Basics)
 
 ### CPP
 
@@ -10,7 +10,7 @@
 
 #### Linkedin Learning
 
-#### Tricks
+#### [Tricks](https://github.com/Guannan-Shen/pathToMLJob/tree/master/Developer_Basics/cpp/tricks)
 
 Small code chunk focus on algorithm and common practice in CPP.
 
@@ -21,6 +21,13 @@ Small code chunk focus on algorithm and common practice in CPP.
 ### Bash and Linux
 
 ### SQL
+
+#### [Oracle SQL](https://github.com/Guannan-Shen/pathToMLJob/tree/master/Developer_Basics/SQL)
+
+#### PL/SQL Procedure and Functions
+
+[Example1](https://github.com/Guannan-Shen/pathToMLJob/blob/master/Developer_Basics/SQL/plsql_procedure.sql)  
+[Example2](https://github.com/Guannan-Shen/pathToMLJob/blob/master/Developer_Basics/SQL/plsql_function%20.sql)  
 
 ### SAS
 
