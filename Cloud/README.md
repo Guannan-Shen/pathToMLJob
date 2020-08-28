@@ -42,4 +42,10 @@ Example, AWS EC2 instance.
 ### PaaS
 
 An application development, testing and **deployment** platform. Such as Google App Engine, AWS's Elastic Beanstalk, Microsoft Azure.  
-A trend of combine PaaS and IaaS.  
+A trend of combine PaaS and IaaS. 
+
+## Planning  
+
+### TCO (Total Cost of Ownership)
+
+### ROI (Return on Investment)  
