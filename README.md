@@ -32,3 +32,11 @@ Small code chunk focus on algorithm and common practice in CPP.
 ### SAS
 
 The goal is to get SAS basic performance certification. Already learnt the knowledge, need to refresh.
+
+## Cloud Computing  
+
+## Planning  
+
+### TCO (Total Cost of Ownership)
+
+### ROI (Return on Investment)  
