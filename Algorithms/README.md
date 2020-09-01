@@ -2,6 +2,8 @@
 
 ## Algorithm
 
+Assume a generic one-processor, **random-access machine (RAM) model** of computation as our implementation technology and understand that our algorithms will be implemented as computer programs. In the RAM model, instructions are executed one after another, with **no concurrent operations**.  
+
 ### Algorithm Complexity
 
 **Space Complexity:** the amount of memory the program requires.
@@ -54,16 +56,18 @@ Recursion is a function calls itself.
 
 ### Sorting  
 
-- Bubble Sort: very basic sorting method, only for teaching. Performance O($n^2$), a for loop inside a for loop.  
-- Merge Sort: Divide-and-conquer algorithm, O(n log n).  
-- Quick Sort:  
-Divide-and-conquer algorithm, O(n log n) but usually better than merge sort, and operating **in place** on the data. Thus, requires less memory. Efficient for sorting a small number of elements. Worst case, if data is mostly sorted already, O(n^2).  
-- Insertion Sort:  
+    - Bubble Sort: 
+      very basic sorting method, only for teaching. Performance O($n^2$), a for loop inside a for loop.  
 
-The idea of **Loop Invariant**, during the insertion sort:  
-At the beginning of each iteration of the for loop, which is indexed by j , the subarray consisting of elements A[1..j-1] constitutes the currently sorted hand, and the remaining
-subarray A[j+1..n] corresponds to the pile of cards still on the table. In fact, elements A[1..j-1] are the elements originally in positions 1 through j 1, but
-now in sorted order. We state these properties of AŒ1 : : j 1 formally as a loop
-invariant
+    - Merge Sort: 
+      Divide-and-conquer algorithm, O(n log n). Breaks a dataset into pieces then merge them, good for large sets of data.  
+
+    - Quick Sort:  
+      Divide-and-conquer algorithm, O(n log n) but usually better than merge sort, and operating **in place** on the data. Thus, requires less memory. Efficient for sorting a small number of elements. Worst case, if data is mostly sorted already, O(n^2).  
+
+    - Insertion Sort:  
+      An array A[1..n] containing a sequence of length n that is to be sorted. (In the code, the number n of elements in A is denoted by A.length.) A[j] is the key, the card to be inserted.  
+      The idea of **Loop Invariant**, during the insertion sort:    
+        At the beginning of each iteration of the for loop, which is indexed by j, the subarray consisting of elements A[1..j-1] constitutes the currently sorted hand, and the remaining subarray A[j+1..n] corresponds to the pile of cards still on the table. In fact, elements A[1..j-1] are the elements originally in positions 1 through j - 1, but now in sorted order. We state these **properties of A[1..j-1] formally as a loop invariant**.
 
 ### Search  
