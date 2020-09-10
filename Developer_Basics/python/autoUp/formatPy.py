@@ -19,7 +19,7 @@ print("-"*45)
 for x, y in dt:
     # prepare a template using .format 
     # sign (<) indicates that the output is left-justified
-    # <fill> specifies how to fill in extra space 
+    # <fill> - specifies how to fill in extra space 
     print( "The X: {x:-<6.2f}| The Y: {y:<6.2f}| The radius: {distance:<6.2f}".format( x = x,y = y, distance = (x**2 + y**2)**(1/2) ) ) 
 
 # the percentage
