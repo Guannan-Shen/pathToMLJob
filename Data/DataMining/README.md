@@ -59,8 +59,23 @@ Three ways to measure association:
 3. Lift (lift scores)
     Lift measures how much more often, which is lift(C -> A) = Confidence(C -> A)/ Support(A).  
 
-### Clustering
-
 ## Pipeline
 
 ### Data reduction
+
+- To avoid multicollinearity
+- Get increased degree of freedom
+- Avoid overfitting
+- Help with interpretability
+
+#### Algorithms for Data reduction
+
+- Linear
+  1. Principal component analysis (PCA) to reduce the number of variables (dimensions, features), by maximizing variability in lower-dimensional space.  
+  2. Factor analysis which is similar to PCA. Using underlying factors not observing variables and variances.  
+- Non-linear (Dimensionality reduction)
+  Useful for nonliner manifold such as shape "I" VS. "S", used in computer vision.
+  1. Kernel PCA (kernel tricks).  
+  2. Others including Isomap (Isometric Feature Mapping),  LLE (locally linear embedding), Maximum variance unfolding.  
+
+### Clustering  
