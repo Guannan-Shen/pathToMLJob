@@ -42,10 +42,26 @@ Example, AWS EC2 instance.
 ### PaaS
 
 An application development, testing and **deployment** platform. Such as Google App Engine, AWS's Elastic Beanstalk, Microsoft Azure.  
-A trend of combine PaaS and IaaS. 
+A trend of combine PaaS and IaaS.  
 
 ## Planning  
 
 ### TCO (Total Cost of Ownership)
 
+Pure TCO + Transitional Costs
+
 ### ROI (Return on Investment)  
+
+Finally, full program costs vs. value calculations.
+
+#### Key Points
+
+- Agility  
+  1. Rapid elasticity
+  2. Capacity always available
+  3. Rapid disaster recovery
+  4. Seamless support for different endpoints
+- Cost of retired hardware  
+- Changes to maintain service level
+- Software cost on cloud
+- Organization transform cost
