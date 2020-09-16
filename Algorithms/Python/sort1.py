@@ -91,5 +91,5 @@ def quickSort(numList):
         if numList[i] > numList[0]:
             tmpI = numList[i]
         if numList[j] < numList[0]:
-        i += 1
-        j -= 1
+            i += 1
+            j -= 1

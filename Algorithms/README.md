@@ -1,5 +1,7 @@
 # Algorithm and Data Structure
 
+JDOODLE, online multi-language tools.  
+
 ## Algorithm
 
 Assume a generic one-processor, **random-access machine (RAM) model** of computation as our implementation technology and understand that our algorithms will be implemented as computer programs. In the RAM model, instructions are executed one after another, with **no concurrent operations**.  
@@ -29,13 +31,45 @@ Particularly, we have by ascending order of time complexity:
 
 ## Data Structure
 
+A container.  
+A collection of data, which defines how to store and access data.  
+
+- Access
+- Update
+- Insert
+- Search
+- Delete
+
+### Types
+
+- Primitive Types (default fixed sizes):
+  variableName -> data  
+  Such as int, boolean, character, float, double, short, long
+- Referenced Types (flexible sizes in memory):
+  **variableName -> memoryAddress -> value**, the memoryAddress needs pointer.  
+  Strings
+
 ### Common Data Structure
 
-- Arrays: collection of elements, one or multi-dimensional.
-- Linked lists: linear collection of nodes.
-- Stacks and queues
-    1. Stacks support push and pop, both are constant time O(1) operation, last in (push) first out (pop). Stack has been used for backtracking.
-    2. Queues support adding and removing, first in first out. Queue has been used for order processing and messaging.  
+- Arrays (like seats in the movie theater):  
+  collection of elements where the element is identified by key or index (slot), one or multi-dimensional.  
+  Jagged array is a type of multi-dimensional array, allowing different number of columns among different rows.  
+  Support Add/Push, Remove/Pop.  
+  Define a comparator to sort an array of **Structs**.
+- Linked lists: linear collection of nodes.  
+  Does not support random access.  
+- Stacks (a stack of pancake) and queues
+    1. Stacks support push and pop, both are constant time O(1) operation, last in (push) first out (pop) (LIFO). Stack has been used for backtracking.
+      - Ideal for record of state or event time:
+        **Runtime stack**, tracing errors back over time scale.  
+        **Call stack**  
+      - Do not pop empty stack.
+      - Peek() the last one
+  
+    2. Queues support adding and removing (enqueue and dequeue), first in first out (FIFO). Queue has been used for order processing and messaging.  
+      - Peek() the first one  
+      - Useful to create a waiting line.
+  
 - Trees
 - Hash tables or Dictionary: associative array, using Hash function to map keys to values. Hash function calculate index to map values to slots in the Hash table. Collisions could happen in non One to One scenario (not injective).
     1. Unique mappings allow us to make counters and filters.
