@@ -7,8 +7,15 @@
 	"settings": {
 		"cSpell.words": [
 			"Bigml",
+			"Isomap",
 			"Knime",
-			"Rapidminer"
+			"Rapidminer",
+			"interpretability",
+			"multicollinearity",
+			"nonliner",
+			"numpy",
+			"overfitting",
+			"strftime"
 		]
 	}
 }
