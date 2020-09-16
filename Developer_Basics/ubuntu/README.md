@@ -6,4 +6,6 @@
     rm -r
   
 - Use mv to trash:
-    mv file ~/.local/share/Trash
+    // can use sudo to delete  
+    mv file ~/.local/share/Trash/files
+    sudo mv /usr/java/jdk-15_linux-x64_bin.tar.gz ~/.local/share/Trash/files/
