@@ -1,4 +1,5 @@
-public class testHello{
+// the public type must be defined in its own file
+class testHello{
     public static void main(String[] args){
         int[] studentId = new int[10];
         for(int i = 0; i < studentId.length; i++){
@@ -7,4 +8,4 @@ public class testHello{
 
 
     }
-}
+};

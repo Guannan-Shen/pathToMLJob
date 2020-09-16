@@ -5,11 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - testHello",
+            "request": "launch",
+            "mainClass": "testHello",
+            "projectName": "pathToMLJob_69038b1c"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            // "stopAtEntry": true,
             "console": "integratedTerminal"
         },
         {
