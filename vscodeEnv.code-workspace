@@ -17,6 +17,12 @@
 			"numpy",
 			"overfitting",
 			"strftime"
-		]
+		],
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		}
 	}
 }
