@@ -1,5 +1,13 @@
 # Efforts to Get ML Job
 
+## Go For It (High-Efficiency)
+
+Go For It! is a simple and stylish productivity app, featuring a to-do list, merged with a timer that keeps your focus on the current task.
+
+    # Install in Ubuntu 16.04
+    sudo add-apt-repository ppa:mank319/go-for-it
+    sudo apt update && sudo apt install go-for-it
+
 ## [Algorithms and Data Structures](https://github.com/Guannan-Shen/pathToMLJob/tree/master/Algorithms)
 
 ## [Developer Skills](https://github.com/Guannan-Shen/pathToMLJob/tree/master/Developer_Basics)
