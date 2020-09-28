@@ -18,3 +18,4 @@ z <- y + runif(100, 0, 20)
 plot(x,y); plot(x,z); plot(y,z)
 plotsd(x, y, z)
 
+
