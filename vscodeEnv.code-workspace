@@ -10,6 +10,7 @@
 			"Isomap",
 			"Knime",
 			"Rapidminer",
+			"dtype",
 			"interpretability",
 			"javac",
 			"multicollinearity",
