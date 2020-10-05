@@ -46,3 +46,48 @@ invA = np.linalg.inv(A)
 print(invA)
 x = np.dot(invA, b)
 print(x)
+
+# TODO: use plu decomposition for any square matrix
+# PLU decomposition used to solve linear system
+from scipy.linalg import lu
+import numpy as np
+B = np.array([[ 0, 0, 1], [0, 2, 2], [3, 0, 4]])
+# PLU
+# P is column permutation of I, L is lower triangular matrix with unit element on diagonal, U is the row echolon form of B
+P, L, U = lu(B)
+print(P)
+print(L)
+print(U)
+# outputs true
+np.allclose(np.dot(np.dot(P,L), U), B)
+print(np.dot(np.dot(P,L), U))
+
+# TODO: higher dimension of arrays, 
+b = np.ones([2,3,4])
+c = np.ones([2,4,3])
+# a = np.ones([9, 5, 3, 4])
+print(b)
+print(c)
+
+# TODO: multiplication of higher dimension array
+np.matmul(b, c).shape
+print(np.matmul(b, c))
+
+X = np.array([ [1,2,3], [4,5,6],[7,8,9] ])
+Y = np.array([ [1,2,3], [2,5,6],[3,6,9] ])
+print(np.matmul(X, Y))
+
+# sum_of_elements is 10
+sum_of_elements = np.sum(X)
+print(sum_of_elements)
+
+k = -9
+print( np.abs(k) ) #abs_k is 9
+
+# random matrix of size 4x4 with values from -15 to 15
+m1 = np.random.randint(low=-15,high=15, size=(4, 4))
+print(m1)
+#replace all values that are greater than 0 with 1
+# TODO: np.where is condition, then, else 
+newM1 = np.where(m1 < 0, m1, 1) 
+print(newM1)
