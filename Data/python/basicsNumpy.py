@@ -39,7 +39,7 @@ print(np.dot(a*I3 ,X))
 
 # TODO: linear equation system Ax = b
 # TODO: the numpy array is by row vector
-A = np.array([[-1, 3], [3 ,5]])
+A = np.array([[0, 5, 1], [-2, 1, -4], [1, 6, 0]])
 # TODO: make this a column vector, 2 by 1
 b = np.array([[3], [7]])
 invA = np.linalg.inv(A)
@@ -60,6 +60,9 @@ print(L)
 print(U)
 # outputs true
 np.allclose(np.dot(np.dot(P,L), U), B)
+# assert(np.allclose(((P@L)@U), B))
+# TODO: matrix multiplication using @
+np.allclose(((P@L)@U), B)
 print(np.dot(np.dot(P,L), U))
 
 # TODO: higher dimension of arrays, 
@@ -91,3 +94,9 @@ print(m1)
 # TODO: np.where is condition, then, else 
 newM1 = np.where(m1 < 0, m1, 1) 
 print(newM1)
+
+# TODO: create empty np array
+testN = np.array([])
+print(testN)
+
+# np.identity(6)
