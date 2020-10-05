@@ -17,6 +17,7 @@
 			"nonliner",
 			"numpy",
 			"overfitting",
+			"scipy",
 			"strftime"
 		],
 		"files.exclude": {
