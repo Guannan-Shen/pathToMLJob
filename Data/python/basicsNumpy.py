@@ -36,3 +36,13 @@ print(a*I3)
 print(a*X)
 # TODO: matrix multiplication 
 print(np.dot(a*I3 ,X))
+
+# TODO: linear equation system Ax = b
+# TODO: the numpy array is by row vector
+A = np.array([[-1, 3], [3 ,5]])
+# TODO: make this a column vector, 2 by 1
+b = np.array([[3], [7]])
+invA = np.linalg.inv(A)
+print(invA)
+x = np.dot(invA, b)
+print(x)
