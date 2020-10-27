@@ -76,8 +76,10 @@ print(c)
 np.matmul(b, c).shape
 print(np.matmul(b, c))
 
-X = np.array([ [1,2,3], [4,5,6],[7,8,9] ])
-Y = np.array([ [1,2,3], [2,5,6],[3,6,9] ])
+X = np.array([ [1,5,2,1], [2,3,1,2],[-1,2,0,4], [2,3,-2,1] ])
+Y = np.array([ [3,0,2,2], [0,1,1,0],[2,1,9,-1],[2,0,-1,4] ])
+print(X)
+print(Y)
 print(np.matmul(X, Y))
 
 # sum_of_elements is 10
@@ -100,3 +102,28 @@ testN = np.array([])
 print(testN)
 
 # np.identity(6)
+lst1 = [2,3,4,5,6]
+lst1[0:3]
+
+lst2 = [5,6,7,8,9,10]
+
+list(set(lst1 + lst2))
+
+set([i for i in lst1 or lst2])
+
+[i for i in set(lst1 + lst2)]
+
+for i in lst2:
+    if i not in lst1:
+        lst1.append(i)
+
+lst1
+
+d = {"a" :1, "b": 2}
+for value in d:
+    print(value)
+d = {"a" :1, "b": 2}
+sum = 0
+for key in d:
+    sum += d[key]
+print("The sum is: ", sum)
