@@ -1,6 +1,6 @@
 ---
 title: "Election Poll for the Liberal Party Canada: the Aurora-Oak Ridges-Richmond Hill Electoral District"
-author: "Charity"
+author: "Guannan Shen"
 date: "October 6, 2020"
 output: 
   pdf_document: 
@@ -38,10 +38,10 @@ knitr::opts_chunk$set(warning = F)
 ######################
 ## Set up workspace
 ######################
-rm(list = ls())
+# rm(list = ls())
 require(tidyverse)
-require(magrittr)
-require(forcats)
+# require(magrittr)
+# require(forcats)
 
 options(stringsAsFactors = F)
 options(dplyr.width = Inf)
@@ -111,7 +111,7 @@ df %>% sample_n(10)
 # Introduction
 In 2019, the Liberal Party which led by Justin Trudeau, won just 157 seats, compared to 184 seats in 2015. Although the Liberal Party was allowed to form a minority government, both the popular vote and the majority government were lost. Actually, the popular vote decreased by 6.35% to 33.12% in 2019 compared with 2015 (Zimonjic, 2019).  
 Toronto has a total of 25 Members of Parliament (MPs). Traditionally, Toronto has always been an vital source of support for the Liberal Party and the Liberals usually dominates the inner portion of the city. In the past two federal elections, the dominance of the Liberals was shaken in three electoral districts, Thornhill, Markham-Unionville and Aurora-Oak Ridges-Richmond Hill (AORRH). Out of those three ridings, the AORRH is the swing riding, where the Liberals was swept by the Conservatives in 2011, then won the next one by just 2.1% and eventually lost the last one by just 2.5% to the Conservatives again (CBC News, 2019). Interestingly, Leona Alleslev who was elected twice as the MP representing the riding of AORRH, crossed the floor to join the Conservative Party from the Liberal Party on September 17, 2018. The results of the last two election indicates that the Liberals has gained support from a significant amount of residents in this district. It is very likely that the Liberals might dominate this riding as well, through a better understanding of the resident profiles and a more accurate targeting.  
-Therefore, our campany, Petit Poll, has designed a online survey to target the 90,000 adult residents in the AORRH riding (Statistics Canada, 2016). The questions were developed to obtain basic demographics information of respondents, discover details during changes in votes of the last two elections, track the impact of the economy policies and the opinions on immigrants/refugees. Additionally, the impact of COVID-19 was also taken into considerations. In general, this is a probability sampling survey with a cross-section design. Moreover, monthly updates of this survey can build up a time-series analysis to track the opinions of the respondents on the Liberals. With this survey design, we were able to conduct preliminary simulation study utilizing random sampling and empirical probability distributions. The preliminary study showed that certain demographic features such as gender may contribute to the swing of this riding. Moreover, it was also shown that the lost of support rate in the Liberals as the crossing the floor of Leona Alleslev. All code will be hosted at https://github.com/Chelsea-Cheng99/STA304/tree/master/ProbSet2 to guarantee reproducibility.      
+Therefore, our campany, Petit Poll, has designed a online survey to target the 90,000 adult residents in the AORRH riding (Statistics Canada, 2016). The questions were developed to obtain basic demographics information of respondents, discover details during changes in votes of the last two elections, track the impact of the economy policies and the opinions on immigrants/refugees. Additionally, the impact of COVID-19 was also taken into considerations. In general, this is a probability sampling survey with a cross-section design. Moreover, monthly updates of this survey can build up a time-series analysis to track the opinions of the respondents on the Liberals. With this survey design, we were able to conduct preliminary simulation study utilizing random sampling and empirical probability distributions. The preliminary study showed that certain demographic features such as gender may contribute to the swing of this riding. Moreover, it was also shown that the lost of support rate in the Liberals as the crossing the floor of Leona Alleslev. All code will be hosted at https://github.com/Guannan-Shen/pathToMLJob/tree/master/Developer_Basics/R to guarantee reproducibility.      
 
 # Methodology
 ## Survey methodology
@@ -225,7 +225,7 @@ The survey was designed to gain knowledge on five aspects: demographics, how did
 ## The simulated results
 
 The following code was used to generate the simulated data. 
-All the code to repeat this work can be found at https://github.com/Chelsea-Cheng99/STA304/tree/master/ProbSet2.
+All the code to repeat this work can be found at https://github.com/Guannan-Shen/pathToMLJob/tree/master/Developer_Basics/R.
 
 
 ```{r codeSim, echo=TRUE, eval=FALSE}

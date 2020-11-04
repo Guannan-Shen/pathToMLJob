@@ -1,6 +1,6 @@
 ---
 title: 'Median Household Income by Age Group: Canada Election 2019 Online Survey'
-author: Charity
+author: "Guannan Shen"
 date: '2020-09-27'
 slug: median-household-income-by-age-group-canada-election-2019-online-survey
 categories: []

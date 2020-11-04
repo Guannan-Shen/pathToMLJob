@@ -105,7 +105,10 @@ print(testN)
 lst1 = [2,3,4,5,6]
 lst1[0:3]
 
+lst1 = [5,6,7,8,9,10]
+
 lst2 = [5,6,7,8,9,10]
+
 
 list(set(lst1 + lst2))
 
@@ -127,3 +130,25 @@ sum = 0
 for key in d:
     sum += d[key]
 print("The sum is: ", sum)
+
+
+
+
+
+        row =  
+        
+        def combineLst(row1, row2):
+            """
+            j: location index int 
+            arrS: sorted
+            """
+            arrS = []
+            for j in range(len(row1)):
+                
+                if row1[j]
+                
+            
+            return(arrS)
+        
+        # 1 
+        arrSorted = 

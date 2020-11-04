@@ -4,7 +4,7 @@
 
 ### ETL
 
-ETL is a pipeline, 
+ETL is a pipeline,  
 
 - Extract
   Pulling data from original source by leveraging an array of data connector options.  
