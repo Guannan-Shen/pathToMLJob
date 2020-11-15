@@ -135,20 +135,20 @@ print("The sum is: ", sum)
 
 
 
-        row =  
+        # row =  
         
-        def combineLst(row1, row2):
-            """
-            j: location index int 
-            arrS: sorted
-            """
-            arrS = []
-            for j in range(len(row1)):
+        # def combineLst(row1, row2):
+        #     """
+        #     j: location index int 
+        #     arrS: sorted
+        #     """
+        #     arrS = []
+        #     for j in range(len(row1)):
                 
-                if row1[j]
+        #         if row1[j]
                 
             
-            return(arrS)
+        #     return(arrS)
         
-        # 1 
-        arrSorted = 
+        # # 1 
+        # arrSorted = 
