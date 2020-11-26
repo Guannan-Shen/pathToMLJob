@@ -264,6 +264,7 @@ f.close()
 
 
 from typing import List
+# understand nested loop
 def f(n: int, m: int) -> List[int]:
     result = []
     for i in range(n):
@@ -278,3 +279,76 @@ def f(n: int, m: int) -> List[int]:
 
 print(f(2, 0))
 print(f(1, 5))
+
+from typing import List
+
+
+def emphasize_last(lst: List[str]) -> None:
+    """Modify the items in lst so that the last letter of each item is 
+    uppercase and the other letters keep their original case.  
+
+    Precondition: each item in lst has length >= 2
+                  and each item in lst contains only alphabetic characters
+
+    >>> lst = ['questions', 'answers']
+    >>> emphasize_last(lst)
+    >>> lst
+    ['questionS', 'answerS']
+    >>> lst = ['ONE', 'Two', 'three']
+    >>> emphasize_last(lst)
+    >>> lst
+    ['ONE', 'TwO', 'threE']
+    """
+    for i in range(len(lst)):
+        lst[i] = lst[i][:-1] + lst[i][-1].upper()
+
+
+def largest_in_inner(lst: List[List[int]]) -> List[int]:
+    """Return a list that contains the largest absolute value of the items from
+    each inner list of lst.
+
+    Preconditions: len(lst) >= 1  
+                   and all inner lists of lst contain at least one item
+
+    >>> lst1 = [[1, 2, -3], [-6, 6, -4]]
+    >>> largest_in_inner(lst1)
+    [3, 6]
+    >>> lst2 = [[4, 2], [1, 7, -4], [-4], [0]]
+    >>> largest_in_inner(lst2)
+    [4, 7, 4, 0]
+    """
+    result = []
+    # for sub_lst in lst:
+    #     result.append(abs( max(sub_lst, key = abs)) )
+
+    for sub_lst in lst:
+        max_item = float('-inf')
+        for item in sub_lst:
+            max_item = max(max_item, abs(item))
+        result.append(max_item)
+    return result
+
+from typing import Dict, List
+
+def in_values(stu_to_grades: Dict[str, List[int]], grade: int) -> bool:
+    """Return True if and only if grade appears in at least one values list in 
+    stu_to_grades.
+
+    Precondition: len(stu_to_grades) > 0
+
+    >>> in_values({'Chen': [80, 83], 'Tara': [88]}, 70)
+    False
+    >>> in_values({'Chen': [80, 83], 'Tara': [88]}, 80)
+    True
+    >>> in_values({'Rui': [82, 78, 81], 'Arif': [78], 'Li': [72, 84]}, 78)
+    True
+    """
+    result = []
+    for student in stu_to_grades:
+        result.append(grade in stu_to_grades[student])
+    for item in result:
+        if item:
+            return True
+        else:
+            return False
+    # return any(result)
