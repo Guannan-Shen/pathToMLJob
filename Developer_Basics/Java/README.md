@@ -30,3 +30,15 @@ Java Runtime Environment (JRE) is needed to run Java programs (Java applications
 
 Java Development Kit includes JRE, compilers, debuggers and other tools to create Java programs.  
 Java SE (standard edition) from Oracle.  
+
+## Books
+
+### Head First Java
+
+A source code file (with .java extension) holds one class definition. A class has one or more methods (functions). When a JVM starts running, it looks for the **main** method:  
+
+    public static void main (String() args){
+
+    }
+
+Every Java application has at least one class and one main method. Every statement in the method must end in a semicolon.  

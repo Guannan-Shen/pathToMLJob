@@ -12,11 +12,13 @@
 			"Rapidminer",
 			"dtype",
 			"interpretability",
+			"isnumeric",
 			"javac",
 			"matmul",
 			"multicollinearity",
 			"nonliner",
 			"numpy",
+			"nums",
 			"overfitting",
 			"scipy",
 			"strftime"

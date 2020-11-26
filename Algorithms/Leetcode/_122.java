@@ -1,4 +1,6 @@
-// leetcode 122, multiple buy and sell, stock max profit
+// leetcode 122, Best Time to Buy and Sell Stock II
+// multiple buy and sell, stock max profit
+
 class Solution {
     public int maxProfit(int[] prices) {
         // one pass, add consecutive increment, updates on peak and valley

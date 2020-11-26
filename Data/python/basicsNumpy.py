@@ -152,3 +152,36 @@ print("The sum is: ", sum)
         
         # # 1 
         # arrSorted = 
+## The Zen of Python, by Tim Peters
+import this 
+# -> str -> bool
+# -> float
+# -> None
+def isEven(value: int) -> int:
+    """Return True if and only if the value is divisible by 2
+
+    >>> isEven(4)
+    True
+    >>> isEven(17)
+    False
+    """
+    return value%2 == 0
+
+isEven(4)
+isEven(17)
+
+# find all methods
+dir(list)
+
+help(list.append)
+help(list.extend)
+
+lst1 = [1, 2, 3]
+id(lst1)
+lst2 = lst1
+id(lst2)
+lst1.count(1)
+lst1.append(4)
+id(lst1)
+id(lst2)
+
