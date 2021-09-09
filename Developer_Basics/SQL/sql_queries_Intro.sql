@@ -1,7 +1,18 @@
 /* Introductory */
 
 
-/*We have a table called Shippers. Return all the fields
+/*
+SELECT  DATE()   AS
+FROM 
+   INNER JOIN
+ON
+WHERE/HAVING 
+GROUP BY
+ORDER BY    desc
+
+HAVING  can have aggregate functions such as count() avg() sum()
+
+*We have a table called Shippers. Return all the fields
 from all the shippers*/
 
 SELECT * 
@@ -93,4 +104,62 @@ ORDER BY BirthDate;
 
 /*Concat */
 SELECT FirstName, LastName, concat(FirstName, ' ', LastName) AS FullName
-FROM Employees
+FROM Employees;
+
+
+
+SELECT Quantity*UnitPrice AS TotalPrice, OrderID, ProductID, UnitPrice,
+Quantity
+FROM OrderDetails
+Order By OrderID, ProductID;
+
+/* this time using the arithmetic operator
+“*”for multiplication. 
+Aggregate Function*/
+
+SELECT count(*) AS TotalCustomers
+FROM Customers;
+
+SELECT min(OrderDate) AS FirstOrder
+FROM Orders;
+
+/* ---------------------------------------- */
+/* Show a list of countries where the Northwind
+company has customers. 
+GROUP BY */
+
+SELECT Country 
+FROM Customers
+GROUP BY Country;
+
+SELECT ContactTitle, count(*) AS TotalContactTitle
+FROM Customers
+GROUP BY ContactTitle
+ORDER BY count(*) desc;
+
+
+SELECT Products.ProductID, Products.ProductName, Suppliers.CompanyName AS Supplier
+FROM Products INNER JOIN Suppliers 
+ON Products.SupplierID = Suppliers.SupplierID
+ORDER BY Products.ProductID;
+
+
+SELECT P.ProductID, P.ProductName, Suppliers.CompanyName AS Supplier
+FROM Products P INNER JOIN Suppliers S
+ON P.SupplierID = S.SupplierID
+ORDER BY P.ProductID;
+
+
+SELECT Orders.OrderID, DATE(Orders.OrderDate) AS OrderDate, Shippers.CompanyName AS Shipper
+FROM Orders INNER JOIN Shippers
+ON Orders.ShipVia = Shippers.ShipperID
+WHERE Orders.OrderID < 10300
+ORDER BY Orders.OrderID;
+
+
+
+
+
+
+
+
